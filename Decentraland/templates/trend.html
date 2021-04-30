@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <table border="0">
+	<th>
+      <div class="col-md-9 px-0">
+      <h2 class="display-4 font-italic">디센트럴랜드의 부동산은 계속해서 성장하고 있습니다.</h2>
+      <p class="lead my-3">현실의 부동산과 달리 디센트럴랜드의 가상부동산은 변동하는 MANA가격을 반영하여 변동성이 높습니다.</p>
+    </div>
+      </th>
+      <th>
+ <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_14fae"></div>
+  <div class="tradingview-widget-copyright">TradingView 제공 <a href="https://kr.tradingview.com/symbols/MANAKRW/?exchange=BITHUMB" rel="noopener" target="_blank"><span class="blue-text">MANAKRW 차트</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 780,
+  "height": 510,
+  "symbol": "BITHUMB:MANAKRW",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "1",
+  "locale": "kr",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "container_id": "tradingview_14fae"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+      </th>
+
+
+
+
+    </table>
+    </div>
+
+
+
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger">1MANA의 원화가격 그래프</strong>
+        <img src="{{ url_for('static', filename='mana_won.png') }}">
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-success">1Parcel의 원화가격 그래프</strong>
+        <img src="{{ url_for('static', filename='pacel_won.png') }}">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+{% endblock %}

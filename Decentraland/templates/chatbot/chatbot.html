@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<main role="main" class="col-md-1 ml-sm-auto col-lg-12 px-md-3">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Ask Price!</h1>
+
+
+
+      </div>
+
+      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+     <iframe
+    style= "position: absolute;
+    left:14%;
+    top:40%;
+    margin-left: -150px;
+    margin-top: -170px;"
+    allow="microphone;"
+    width="500"
+    height="500"
+    src="https://console.dialogflow.com/api-client/demo/embedded/308022f7-1048-4fc7-8fc5-e671a0fede8b">
+</iframe>
+
+
+
+
+<iframe style= "position: absolute;
+    right:16%;
+    top:40%;
+    margin-right: -150px;
+    margin-top: -170px;" src="https://kr.widgets.investing.com/top-cryptocurrencies?theme=darkTheme" width="50%" height="100%" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;"><a href="https://kr.investing.com?utm_source=WMT&amp;utm_medium=referral&amp;utm_campaign=TOP_CRYPTOCURRENCIES&amp;utm_content=Footer%20Link" target="_blank" rel="nofollow"></a></div>
+</main>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3" style="font-family: 'Lobster';">Decentraland</h1>
+      <p>디센트럴랜드는 이더리움 블록체인을 기반으로 하는 가상현실 플랫폼입니다. 디센트럴 랜드의 토지는 이더리움 스마트 계약에 저장되어 있으며 대체가 불가능하고 양도할 수 있는 유한한 디지털 자산입니다. 지금 디센트럴랜드의 토지가격을 알아보세요!</p>
+      <p><a class="btn btn-info btn-lg" href="{{url_for('chatbot.chatbot')}}" role="button">챗봇으로 더 알아보기&raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>가격동향</h2>
+        <p>디센트럴랜드의 토지의 가격은 꾸준히 상승하고 있습니다. 화폐가치가 떨어지고 있는 지금, 디센트럴랜드의 토지를 구매하여 인플레이션에 대처하세요!</p>
+        <p><a class="btn btn-secondary" href="{{url_for('pricetrend.trend')}}" role="button">가격동향으로 이동 &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>홈페이지</h2>
+        <p>디센트럴랜드안에서 메타마스크 지갑을 만들고 다양한 증강현실과 NFT예술작품, 카지노와 드래곤탑승등 여러가지 컨텐츠를 즐겨보세요! 토지 구입은 옵션입니다!</p>
+        <p><a class="btn btn-secondary" href={{url_for('homepage.home')}} role="button">홈페이지로 이동 &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>마켓 플레이스</h2>
+        <p>디센트럴랜드 마켓에서 디센트럴랜드의 토지뿐만아니라 캐릭터를 위한 코스튬, 대량의 부동산등 다양한 물건을 구입해보세요! 구입에 통용되는 화폐는 MANA입니다.</p>
+        <p><a class="btn btn-secondary" href={{url_for('marketplace.market')}} role="button">마켓으로 이동 &raquo;</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+
+<footer class="container">
+  <p>&copy; Seokclarinet 2021</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</html>
+
+{% endblock %}
